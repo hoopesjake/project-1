@@ -1,0 +1,242 @@
+.cover-page-header {
+    text-align: center;
+    background-color: #ADD8E6;
+    color: white;
+    padding: 10px 0;
+
+
+}
+
+.cover-page-header h1 {
+    font-size: 5rem;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cover-page-header h2 {
+    font-size: 1.5rem;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.cover-page-header h1,
+.cover-page-header h2 {
+    border: 2px solid white;
+    margin: 10px;
+    background-color: #555560;
+    opacity: 0.60;
+}
+
+.custom-shape-divider-top-1709154185 {
+    position: absolute;
+    bottom: 50;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1709154185 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 63px;
+}
+
+.custom-shape-divider-top-1709154185 .shape-fill {
+    fill: #ADD8E6;
+}
+
+#home {
+    background-color: #ADD8E6;
+}
+
+#resume h2 {
+    text-align: center;
+    color: #555560;
+}
+
+.home-carousel {
+    padding: 2rem;
+}
+
+.slider-wrapper {
+    position: relative;
+    max-width: 48rem;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: white;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.slider-arrow:hover {
+    color: black;
+}
+
+.slider {
+    display: flex;
+    aspect-ratio: 27 / 18;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 5rem 3rem -.75rem hsla(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+}
+
+.slider::-webkit-scrollbar {
+    display: none;
+}
+
+.slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+
+.slider-nav {
+    display: flex;
+    column-gap: 1.25rem;
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+
+.slider-nav a {
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+    opacity: 1;
+}
+
+.custom-shape-divider-bottom-1709155129 {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1709155129 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.custom-shape-divider-bottom-1709155129 .shape-fill {
+    fill: #555560;
+}
+
+#contactMe {
+    background-color: #555560;
+}
+
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* used chatgpt to help me format the text boxes */
+.contact-form input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact-form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact-form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+/* end of chatgpt prompt */
+
+.contact-form textarea {
+    height: 100px;
+}
+
+.submit {
+    background-color: #ADD8E6;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 7.5px 15px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.submit:hover {
+    background-color: #ADD8E0;
+}
+
+.icon-container {
+    background-color: #555560;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.icon-container svg {
+    fill: white;
+    width: 50px;
+    height: 50px;
+    margin: 0 40px;
+}
