@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project-1.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+
+    <title>Project 1</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">About Me</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resume">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contactMe">Contact Me</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Quick Links
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#collapseOne">Education</a></li>
+                                <li><a class="dropdown-item" href="#collapseTwo">Experience</a></li>
+                                <li><a class="dropdown-item" href="#collapseThree">Volunteer Service</a></li>
+                                <li><a class="dropdown-item" href="#collapseFour">Skills and Interests</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <header class="cover-page-header">
+            <h1>Welcome to My Portfolio!</h1>
+            <h2>Jake Hoopes</h2>
+        </header>
+    </header>
+    <section class="home-carousel" id="home">
+        <div class="slider-wrapper">
+            <div class="slider">
+                <img id="slide-1" src="./photos/byucampus.jpeg" alt="BYU Campus" />
+                <img id="slide-2" src="./photos/b&bmotors.png" alt="Working at the Dealership" />
+                <img id="slide-3" src="./photos/aptive.png" alt="Summer sales" />
+                <img id="slide-4" src="./photos/jakebasketball.png" alt="Basketball" />
+            </div>
+            <div class="slider-nav">
+                <a href="#slide-1"></a>
+                <a href="#slide-2"></a>
+                <a href="#slide-3"></a>
+                <a href="#slide-4"></a>
+            </div>
+            <button class="slider-arrow prev"
+                onclick="document.querySelector('.slider').scrollBy({left: -500, behavior: 'smooth'})">&#8249;</button>
+            <button class="slider-arrow next"
+                onclick="document.querySelector('.slider').scrollBy({left: 500, behavior: 'smooth'})">&#8250;</button>
+        </div>
+        <br><br><br>
+    </section>
+    <section class="divider">
+        <div class="custom-shape-divider-top-1709154185">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <section id="resume">
+        <br><br><br><br>
+        <h2>Resume</h2><br><br>
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <strong>1. Education</strong>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Brigham Young University:</strong> Graduating in April 2025
+                        <br><br>
+                        <strong>Major:</strong> Applying to: Information Systems, Finance and Marketing
+                        <br><br>
+                        <strong>Minor:</strong> Spanish
+                        <br></br>
+                        <strong>GPA:</strong> 3.60
+                        <br><br>
+                        <strong>ACT:</strong> 29
+                        <br><br>
+                        <strong>BYU ROC Board:</strong> Helped manage a team of 15 other ROC board members. The
+                        collective goal was to create an electric atmosphere during BYU
+                        Sporting events. Refined teamwork skills, project management behaviors and unique leadership
+                        skills.
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        <strong>2. Experience</strong>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>B&B Motors:</strong> FP&A Analyst, Intern
+                        <br><br>
+                        <strong>West Valley City, UT:</strong> Apr 2023 - Present
+                        <br><br>
+                        <strong>Skills:</strong>
+                        <ul>
+                            <li>Oversee cash flow management and regulating inventory</li>
+                            <li>Planning, forecasting, budgeting, reporting sales and expenses</li>
+                            <li>Demonstrate a creative thinking and problem solving aptitude</li>
+                            <li>Aid in project management of inventory</li>
+                            <li>Assist 4-5 clients obtain loans each week</li>
+                        </ul>
+                        <br></br>
+                        <strong>White Castle Roofing and Solar:</strong> On-Campus Internship
+                        <br><br>
+                        <strong>Provo, UT:</strong> Jan 2023 - Apr 2023
+                        <br><br>
+                        <strong>Skills:</strong>
+                        <ul>
+                            <li>Acted as a financial consultant</li>
+                            <li>Presented financial plan to CEO, CFO and Chief Sales Manager</li>
+                            <li>Organized 2 extensive and interactive surveys</li>
+                            <li>Provided an informative 48 page financial report</li>
+                        </ul>
+                        <br></br>
+                        <strong>Aptive Environmental:</strong> Route Manager
+                        <br><br>
+                        <strong>Seattle, WA:</strong> Aug 2021 - Sep 2022
+                        <br><br>
+                        <strong>Skills:</strong>
+                        <ul>
+                            <li>Quality face-to-face transactions with clients</li>
+                            <li>Excellent interpersonal, communication, and organizational skills</li>
+                            <li>Ability to generate leads, build relationships, and close 134 deals</li>
+                            <li>Generated over $80,000 in revenue through sales</li>
+                        </ul>
+                        <br></br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        <strong>3. Volunteer Service</strong>
+                    </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Special Olympics:</strong> Referee and Basketball Coach
+                        <br><br>
+                        <strong>Skills:</strong>
+                        <ul>
+                            <li>Fostered an uplifting learning environment</li>
+                            <li>Initiated team cooperation skills</li>
+                            <li>Built lasting relations with team members</li>
+                        </ul>
+                        <br>
+                        <strong>The Church of Jesus Christ of Latter-day Saints:
+                        </strong> Volunteer Representative
+                        <br><br>
+                        <strong>Mission(s):</strong> Pachuca, Mexico / Boston, Massachusetts: Aug 2019 - Jul 2021
+                        <br><br>
+                        <strong>Skills:</strong>
+                        <ul>
+                            <li>Constructed goal-setting habits, and submitted weekly progress reports</li>
+                            <li>Lead and taught over 20 workshops on social media contacting, relationship building, and
+                                leadership skills</li>
+                            <li>Worked 10 to 12-hour days for two years</li>
+                            <li>Adapted to COVID-19 pandemic procedures</li>
+                        </ul>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                        <strong>4. Skills & Interests</strong>
+                    </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>Skills & Interests:</strong>
+                        <ul>
+                            <li>Interests: Basketball, football, track and field, hiking, traveling, reading, water
+                                sports</li>
+                            <li>Eagle Scout, Boy Scouts of America</li>
+                            <li>Started Big Brother Club, a network of tutors to help middle-school-aged boys connect
+                                and learn</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+    </section>
+    <section class="divider2">
+        <div class="custom-shape-divider-bottom-1709155129">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+    </section>
+
+    <section id="contactMe">
+        <br><br><br>
+        <div class="contact-form">
+
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">First Name:</label>
+                <input type="text" id="firstname" name="firstname" placeholder="First Name"><br><br>
+                <label for="name">Lame Name:</label>
+                <input type="text" id="lastname" name="lastname" placeholder="Last Name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email"><br><br>
+                <label for="number">Number:</label>
+                <!-- used chatgpt to get a phone number style input -->
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="123-456-7890"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type here"></textarea><br><br>
+                <button class="submit" name="submit">Submit</button>
+            </form>
+        </div>
+        <br><br><br>
+    </section>
+
+</body>
+<footer>
+    <div class="icon-container">
+        <a href="https://www.facebook.com/jake.hoopes.12/"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                <path
+                    d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+            </svg></a>
+        <a href="https://www.instagram.com/hoopesjake/"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                <path
+                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+            </svg></a>
+        <a href="https://www.linkedin.com/in/jacob-hoopes-83baa922b/"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+            </svg></a>
+    </div>
+
+</footer>
+
+</html>
